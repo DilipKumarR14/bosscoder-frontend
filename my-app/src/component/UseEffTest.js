@@ -1,17 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
+import UseOnlineStatusHook from "./UseOnlineStatusHook";
 function UseEffTest() {
-  useEffect(() => {
-    console.log("inside effe");
-  }, []);
+  //   useEffect(() => {
+  //     console.log("inside effe");
+  //   }, []);
 
-  console.log("outside effect");
+  //   console.log("outside effect");
 
-  return( <div>main function
-    <button>Click me</button>
-  </div>
-    
-  );
+  const onlineStatus = UseOnlineStatusHook();
+
+  return <div>Online Status : {onlineStatus ? "YOU ARE ONLINE" : "YOU ARE OFFLINE"}</div>;
 }
 
 export default UseEffTest;

@@ -42,3 +42,11 @@ function UseEffectHook() {
 }
 
 export default UseEffectHook;
+
+/**
+ * The useEffect hook has two main arguments:
+The Effect Function: The first argument is a function that contains the side-effect logic, such as data fetching, event listeners, or manual DOM manipulations.
+The Dependency Array: The second argument is an array of dependencies. This array tells React when to re-run the effect function.
+
+useEffect will render at last after components loading..
+ */
