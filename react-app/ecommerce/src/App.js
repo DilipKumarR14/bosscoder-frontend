@@ -11,41 +11,30 @@ function App() {
   return (
     <div className="App">
       <Landing />
-      <Outlet></Outlet>
-      
+      <Outlet /> {/* This will render nested routes */}
     </div>
   );
 }
 
-// Define the appRouter with all the routes
 export const appRouter = createBrowserRouter([
   {
     path: "/",
-    //
     element: <App />,
-    errorElement: <Error></Error>,
+    errorElement: <Error />,
     children: [
       {
-        path: "/navbar",
+        path: "navbar", // Change path to be relative
         element: <Navbar />,
       },
       {
-        path: "/contact",
+        path: "contact", // Change path to be relative
         element: <Contact />,
       },
+      {
+        path: "about", // Move 'about' under the main route
+        element: <About />,
+      },
     ],
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/navbar",
-    element: <Navbar />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
   },
   {
     path: "/header",
