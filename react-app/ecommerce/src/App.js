@@ -6,12 +6,14 @@ import Header from "./components/Header";
 import Contact from "./components/Contact";
 import Landing from "./components/Landing";
 import Error from "./components/Error";
+import LinkK from "./components/LinkK";
 
 function App() {
   return (
     <div className="App">
-      <Landing />
+      {/* <Landing /> */}
       <Outlet /> {/* This will render nested routes */}
+      <LinkK></LinkK>
     </div>
   );
 }
