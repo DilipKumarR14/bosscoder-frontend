@@ -11,9 +11,9 @@ import LinkK from "./components/LinkK";
 function App() {
   return (
     <div className="App">
-      {/* <Landing /> */}
+      <Landing />
       <Outlet /> {/* This will render nested routes */}
-      <LinkK></LinkK>
+      {/* <LinkK></LinkK> */}
     </div>
   );
 }
