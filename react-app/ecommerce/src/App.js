@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Landing from "./components/Landing";
 import Error from "./components/Error";
 import LinkK from "./components/LinkK";
+import Counter from "./redux/Counter";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Landing />
       <Outlet /> {/* This will render nested routes */}
       {/* <LinkK></LinkK> */}
+      <Counter/>
     </div>
   );
 }
